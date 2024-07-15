@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: url("bg.jpg");
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .home-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        header {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .content {
+            max-width: 600px;
+            width: 100%;
+        }
+        .message {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .chat-link {
+            background: skyblue;
+            color: black;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .chat-link:hover {
+            background: deepskyblue;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .message {
+                font-size: 1.2em;
+            }
+            .chat-link {
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .message {
+                font-size: 1em;
+            }
+            .chat-link {
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="home-page">
+        <header id="greeting">Welcome to Spiritual AI</header>
+        <div class="content">
+            <div class="message">Hey there, I am Spiritualize AI, your AI for personal philosophy. What's on your heart today?</div>
+            <a href="chat.html" class="chat-link">Chat with Spiritual AI</a>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
